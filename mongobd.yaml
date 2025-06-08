@@ -1,5 +1,5 @@
 services:
-  mongo
+  mongo:
     image: mongo
     ports:
     - 27107:27107
@@ -7,7 +7,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: querty
 
-  mongo-express
+  mongo-express:
     image: mongo-express
     ports:
     - 8081:8081
